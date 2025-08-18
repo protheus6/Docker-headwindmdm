@@ -58,7 +58,11 @@ EXPOSE 8443
 EXPOSE 31000
 
 COPY docker-entrypoint.sh /
+RUN chmod a+x /docker-entrypoint.sh
+
 COPY update-web-app-docker.sh /opt/hmdm/
+RUN chmod a+x /opt/hmdm/update-web-app-docker.sh
+
 COPY tomcat_conf/server.xml /usr/local/tomcat/conf/server.xml 
 ADD templates /opt/hmdm/templates/
 
