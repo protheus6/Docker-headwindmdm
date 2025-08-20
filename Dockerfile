@@ -38,6 +38,7 @@ ENV SQL_USER=hmdm
 ENV SQL_PASS=Ch@nGeMe
 
 ENV PROTOCOL=https
+ENV EXTERNAL_PORT=443
 #ENV BASE_DOMAIN=your-domain.com
 
 # Set this parameter to your local IP address 
